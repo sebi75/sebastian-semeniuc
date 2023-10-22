@@ -7,8 +7,7 @@ type PageHeaderProps = {
 export const PageHeader: FunctionComponent<PageHeaderProps> = ({ title }) => {
   return (
     <header className="my-5">
-      <h1 className="text-4xl font-bold my-4">{title}</h1>
-      <div className="border w-full" />
+      <h1 className="text-5xl text-zinc-600 font-bold my-4">{title}</h1>
     </header>
   );
 };
