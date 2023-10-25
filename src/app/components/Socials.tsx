@@ -41,7 +41,7 @@ type Config = {
 
 type Props = {
   className?: string;
-  config: Config;
+  config?: Config;
 };
 
 export const Socials: FunctionComponent<Props> = ({
