@@ -1,4 +1,5 @@
-import React, { FunctionComponent } from "react";
+"use client";
+import React, { FunctionComponent, useState } from "react";
 import Link from "next/link";
 import { MenuIcon } from "lucide-react";
 import {
@@ -42,6 +43,7 @@ const headerItems: HeaderItem[] = [
 ];
 
 export const Header: FunctionComponent = () => {
+  const [isDropdownOpen, setsDropdownOpen] = useState<boolean>(false);
   return (
     <nav className="flex items-center max-w-4xl mx-auto justify-center w-full">
       <div className="flex flex-col w-full">
@@ -60,8 +62,8 @@ export const Header: FunctionComponent = () => {
         </div>
         <div className="h-[1px] bg-gray-200 w-full" />
       </div>
-      {/* <div className="flex sm:hidden">
-        <DropdownMenu>
+      <div className="flex sm:hidden">
+        <DropdownMenu open={isDropdownOpen} onOpenChange={setsDropdownOpen}>
           <DropdownMenuTrigger>
             <Button variant="outline">
               <MenuIcon size={24} />
@@ -70,7 +72,10 @@ export const Header: FunctionComponent = () => {
           <DropdownMenuContent>
             {headerItems.map(({ href, name }, index) => {
               return (
-                <DropdownMenuItem key={`${index + 1}-${index}`}>
+                <DropdownMenuItem
+                  key={`${index + 1}-${index}`}
+                  onClick={() => setsDropdownOpen(false)}
+                >
                   <Link
                     href={href}
                     className={"text-gray-800 dark:text-gray-400 font-bold p-2"}
@@ -82,7 +87,7 @@ export const Header: FunctionComponent = () => {
             })}
           </DropdownMenuContent>
         </DropdownMenu>
-      </div> */}
+      </div>
     </nav>
   );
 };

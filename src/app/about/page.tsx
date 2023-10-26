@@ -7,7 +7,7 @@ export default function About() {
   return (
     <>
       <PageHeader title="About" />
-      <div className="flex flex-row mt-10 flex-wrap w-full h-full">
+      <div className="flex md:flex-row flex-col mt-10 flex-wrap w-full h-full">
         {/* Avatar with short description section */}
         <section className="flex flex-1 flex-col items-center gap-5">
           <Avatar className="w-36 h-36" />

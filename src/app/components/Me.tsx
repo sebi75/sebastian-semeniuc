@@ -5,7 +5,7 @@ export const Me: FunctionComponent = () => {
   return (
     <div className="flex flex-col">
       <Avatar />
-      <h1 className="text-5xl font-bold mt-5">
+      <h1 className="text-3xl md:text-5xl font-bold mt-5">
         Programmer. Student. Entrepreneurship Passionate.
       </h1>
       {/* Personal information paragraphs */}

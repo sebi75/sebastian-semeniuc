@@ -45,9 +45,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={clsx("antialiased w-full", inter.className)}>
+      <body
+        className={clsx(
+          "antialiased w-full min-h-screen flex flex-col justify-between",
+          inter.className
+        )}
+      >
         <Header />
-        <main className="mt-6 max-w-4xl mx-auto flex-auto flex flex-col">
+        <main className="mt-6 max-w-4xl mx-auto px-5 md:px-0 flex-auto flex flex-col">
           <div>{children}</div>
         </main>
         <Footer />
