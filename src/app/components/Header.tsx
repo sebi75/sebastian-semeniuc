@@ -64,7 +64,7 @@ export const Header: FunctionComponent = () => {
       </div>
       <div className="flex sm:hidden">
         <DropdownMenu open={isDropdownOpen} onOpenChange={setsDropdownOpen}>
-          <DropdownMenuTrigger>
+          <DropdownMenuTrigger asChild>
             <Button variant="outline">
               <MenuIcon size={24} />
             </Button>
@@ -75,6 +75,7 @@ export const Header: FunctionComponent = () => {
                 <DropdownMenuItem
                   key={`${index + 1}-${index}`}
                   onClick={() => setsDropdownOpen(false)}
+                  asChild
                 >
                   <Link
                     href={href}
