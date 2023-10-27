@@ -1,4 +1,5 @@
 import { PageHeader } from "../components/PageHeader";
+import { ProjectsList } from "../components/projects/ProjectsList";
 
 export default function Projects() {
   return (
@@ -9,6 +10,9 @@ export default function Projects() {
         hackathons, some were built for learning purposes, and some for fun.
         This is a compact list of the more interesting ones.
       </h1>
+      <div className="mt-5">
+        <ProjectsList />
+      </div>
     </>
   );
 }

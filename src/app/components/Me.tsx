@@ -46,7 +46,7 @@ export const Me: FunctionComponent = () => {
           out
           <a
             className="font-bold bg-gradient-to-t from-gray-800 to-[#7d53f7] bg-clip-text text-lg text-transparent underline underline-offset-4 mx-2"
-            href="https://www.kleerk.com"
+            href="https://kleerk.com"
             target="_blank"
             rel="noreferrer noopener"
           >
