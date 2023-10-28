@@ -34,10 +34,11 @@ export default function About() {
           </p>
           <p className="text-zinc-600">
             With every bit of free time I have, I&apos;m exploring and tinkering
-            with new ideas and technology. I&apos;m currently working on Kleerk,
-            a platform for content creation with the help of AI, both text and
-            image generation. Kleerk puts together powerful, cutting edge
-            technology served in a simple and easy to use interface.
+            with new ideas and technology, and working on all kinds of crazy
+            projects. I&apos;m currently working on Kleerk, a platform for
+            content creation with the help of AI, both text and image
+            generation. Kleerk puts together powerful, cutting edge technology
+            served in a simple and easy to use interface.
           </p>
           <div className="mt-3">
             <Skills />
