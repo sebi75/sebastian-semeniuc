@@ -1,5 +1,5 @@
-import React, { FunctionComponent } from "react";
-import { Socials } from "./Socials";
+import { FunctionComponent } from "react";
+import { Socials } from "./socials";
 
 export const Footer: FunctionComponent = () => {
   return (

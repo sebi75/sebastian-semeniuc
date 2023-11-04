@@ -1,7 +1,7 @@
-import { PageHeader } from "@/app/components/PageHeader";
-import { Avatar } from "../components/Avatar";
-import { Socials } from "../components/Socials";
-import { Skills } from "../components/Skills";
+import { PageHeader } from "@/app/components/page-header";
+import { Avatar } from "../components/avatar";
+import { Socials } from "../components/socials";
+import { Skills } from "../components/skills";
 
 export default function About() {
   return (

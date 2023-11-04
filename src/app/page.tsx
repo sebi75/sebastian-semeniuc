@@ -1,4 +1,4 @@
-import { Me } from "@/app/components/Me";
+import { Me } from "@/app/components/me";
 
 export default function Home() {
   return (

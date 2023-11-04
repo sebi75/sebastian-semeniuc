@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from "react";
-import { Avatar } from "./Avatar";
+import { Avatar } from "./avatar";
 
 export const Me: FunctionComponent = () => {
   return (

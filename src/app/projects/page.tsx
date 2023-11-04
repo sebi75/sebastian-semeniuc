@@ -1,5 +1,5 @@
-import { PageHeader } from "../components/PageHeader";
-import { ProjectsList } from "../components/projects/ProjectsList";
+import { PageHeader } from "../components/page-header";
+import { ProjectsList } from "../components/projects/projects-list";
 
 export default function Projects() {
   return (
