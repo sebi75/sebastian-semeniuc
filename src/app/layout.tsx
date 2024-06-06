@@ -3,6 +3,7 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import clsx from "clsx";
 import { Footer } from "@/app/components/Footer";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -56,6 +57,7 @@ export default function RootLayout({
           <div>{children}</div>
         </main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );

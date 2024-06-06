@@ -1,4 +1,4 @@
-import { ProjectCard } from "./ProjectCard";
+import { ProjectCard } from "./project-card";
 import { projects } from "./projects";
 import { type FunctionComponent } from "react";
 

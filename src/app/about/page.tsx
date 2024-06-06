@@ -1,4 +1,4 @@
-import { PageHeader } from "@/app/components/PageHeader";
+import { PageHeader } from "@/app/components/page-header";
 import { Avatar } from "../components/Avatar";
 import { Socials } from "../components/Socials";
 import { Skills } from "../components/Skills";
