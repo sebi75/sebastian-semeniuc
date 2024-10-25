@@ -1,6 +1,11 @@
 import { Avatar } from "../components/Avatar";
 import { Socials } from "../components/Socials";
 import { Skills } from "../components/Skills";
+import { constructMetadata } from "@/utils";
+
+export const metadata = constructMetadata({
+  title: "About - Sebastian Semeniuc",
+});
 
 export default function About() {
   return (

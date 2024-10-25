@@ -3,8 +3,8 @@ import { type Metadata } from "next";
 const HOME_DOMAIN = "https://sebastian-semeniuc.vercel.app";
 
 export function constructMetadata({
-  title = "- Sebastian Semeniuc - Building AI tools",
-  description = "Sebastian Semeniuc is a 21 years old builder and founder based in Cluj-Napoca, working on various AI tools.",
+  title = "- Sebastian Semeniuc",
+  description = "Sebastian Semeniuc is a 21 years old builder and founder based in Cluj-Napoca, working on various cool projects.",
   icons = [
     {
       rel: "icon",
