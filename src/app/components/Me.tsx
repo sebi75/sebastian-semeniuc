@@ -8,7 +8,7 @@ export const Me: FunctionComponent = () => {
           Sebastian Semeniuc
         </h1>
         <p>I am a 21 years old builder and founder based in Cluj-Napoca.</p>
-        <p>I&apos;m currently working on various AI tools, Some of which:</p>
+        <p>I&apos;m working on various AI tools, some of which are:</p>
         <ul className="flex flex-col my-5 gap-7">
           <li className="list-disc gap-3">
             <a
@@ -50,7 +50,7 @@ export const Me: FunctionComponent = () => {
               Shortsheap
             </a>
             <span className="text-base">
-              - Use <b>AI</b> to generate <b>short-form</b> content in minutes
+              - Use <b>AI</b> to generate <b>Short-Form</b> content in minutes
               for your brands or channels. <b>Clip</b> & <b>AI-Stories</b> &
               other <b>Popular Formats</b>.
             </span>
