@@ -2,12 +2,6 @@
 import { FunctionComponent } from "react";
 import { Github, Linkedin, LucideIcon, Twitter } from "lucide-react";
 import { cn } from "@/lib/utils";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/app/components/ui/tooltip";
 
 type SocialLink = {
   name: string;
@@ -59,16 +53,15 @@ export const Socials: FunctionComponent<Props> = ({
         const key = link.name.toLowerCase() as keyof Config;
         if (!config[key]) return null;
         return (
-          <TooltipProvider key={`social-icon-${name}-section`}>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <a href={url} className="mx-2" target="_blank" rel="noreferrer">
-                  <Icon className="h-6 w-6 " />
-                </a>
-              </TooltipTrigger>
-              <TooltipContent>{`Visit my ${name} profile`}</TooltipContent>
-            </Tooltip>
-          </TooltipProvider>
+          <a
+            href={url}
+            key={name}
+            className="mx-2"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Icon className="h-6 w-6 " />
+          </a>
         );
       })}
     </div>
