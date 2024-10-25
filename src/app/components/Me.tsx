@@ -2,9 +2,9 @@ import React, { FunctionComponent } from "react";
 
 export const Me: FunctionComponent = () => {
   return (
-    <div className="flex flex-col space-y-16 max-w-2xl">
+    <div className="flex flex-col p-3 space-y-16 max-w-2xl">
       <section className="text-xl my-3 text-zinc-400 flex flex-col gap-7">
-        <h1 className="text-3xl md:text-5xl font-bold text-zinc-800 mt-5">
+        <h1 className="text-5xl font-bold text-zinc-800 mt-5">
           Sebastian Semeniuc
         </h1>
         <p>I am a 21 years old builder and founder based in Cluj-Napoca.</p>
@@ -59,9 +59,7 @@ export const Me: FunctionComponent = () => {
       </section>
 
       <section className="text-xl my-3 text-zinc-400 flex flex-col gap-5">
-        <h1 className="text-3xl md:text-5xl font-bold text-zinc-800 mt-5">
-          Contact me
-        </h1>
+        <h1 className="text-5xl font-bold text-zinc-800 mt-5">Contact me</h1>
 
         <p>
           Reach out to me at{" "}
