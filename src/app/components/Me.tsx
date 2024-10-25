@@ -1,59 +1,98 @@
 import React, { FunctionComponent } from "react";
-import { Avatar } from "./Avatar";
 
 export const Me: FunctionComponent = () => {
   return (
-    <div className="flex flex-col">
-      <Avatar />
-      <h1 className="text-3xl md:text-5xl font-bold mt-5">
-        Programmer. Student. Entrepreneurship Passionate.
-      </h1>
-      {/* Personal information paragraphs */}
-      <div className="my-5 max-w-2xl">
-        <p className="text-base text-zinc-600">
-          Hey, I&apos;m Sebastian 👋, a young individual striving to make a
-          difference in the world.
-        </p>
-        <p className="text-base text-zinc-600 my-3">
-          I&apos;m a Software Engineer at
-          <a
-            className="font-bold text-black underline underline-offset-4 mx-2"
-            href="https://www.fortech.ro/"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            Fortech
-          </a>{" "}
-          where I help developing and maintaining a platform for influencer
-          marketing.
-        </p>
-        <p className="text-base my-3 text-zinc-600">
-          I&apos;m also a Robotics Engineering student at
-          <a
-            className="font-bold text-black underline underline-offset-4 mx-2"
-            href="https://www.utcluj.ro/"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            Technical University of Cluj-Napoca
-          </a>
-          .
-        </p>
+    <div className="flex flex-col space-y-16 max-w-2xl">
+      <section className="text-xl my-3 text-zinc-400 flex flex-col gap-7">
+        <h1 className="text-3xl md:text-5xl font-bold text-zinc-800 mt-5">
+          Sebastian Semeniuc
+        </h1>
+        <p>I am a 21 years old builder and founder based in Cluj-Napoca.</p>
+        <p>I&apos;m currently working on various AI tools, Some of which:</p>
+        <ul className="flex flex-col my-5 gap-7">
+          <li className="list-disc gap-3">
+            <a
+              className="font-bold text-lg text-purple-600 underline underline-offset-2 mx-2"
+              href="https://kleerk.com"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              Kleerk
+            </a>
+            <span className="text-base">
+              - Build AI marketing copies & Generate thousands of AI product
+              photos in <b>seconds</b> instead of <b>tens of hours</b> and{" "}
+              <b>$K&apos;s</b> of dollars.
+            </span>
+          </li>
+          <li className="list-disc">
+            <a
+              className="font-bold text-lg text-purple-600 underline underline-offset-2 mx-2"
+              href="https://nexxtsupport.com"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              NexxtSupport
+            </a>
+            <span className="text-base">
+              - Craft custom AI chatbots with your <b>own</b> data. Custom data
+              flow in from various sources. Use them on your website to{" "}
+              <b>automate</b> customer support.
+            </span>
+          </li>
+          <li className="list-disc">
+            <a
+              className="font-bold text-lg text-purple-600 underline underline-offset-2 mx-2"
+              href="https://shortsheap.com"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              Shortsheap
+            </a>
+            <span className="text-base">
+              - Use <b>AI</b> to generate <b>short-form</b> content in minutes
+              for your brands or channels. <b>Clip</b> & <b>AI-Stories</b> &
+              other <b>Popular Formats</b>.
+            </span>
+          </li>
+        </ul>
+      </section>
 
-        <p className="text-base my-3 text-zinc-600">
-          I&apos;m currently working on developing next generation AI
-          applications for simplifying tedious and time consuming tasks. Check
-          out
+      <section className="text-xl my-3 text-zinc-400 flex flex-col gap-5">
+        <h1 className="text-3xl md:text-5xl font-bold text-zinc-800 mt-5">
+          Contact me
+        </h1>
+
+        <p>
+          Reach out to me at{" "}
           <a
-            className="font-bold bg-gradient-to-t from-gray-800 to-[#7d53f7] bg-clip-text text-lg text-transparent underline underline-offset-4 mx-2"
-            href="https://kleerk.com"
-            target="_blank"
-            rel="noreferrer noopener"
+            href="mailto:
+        sebisemeniuc@gmail.com"
+            className="font-bold text-lg text-purple-600 underline underline-offset-2 mx-2"
           >
-            KleerkAI
+            sebisemeniuc@gmail.com
           </a>
+          , directly DM me on
+          <a
+            href="https://x.com/sebisemeniuc"
+            className="font-bold text-lg text-purple-600 underline underline-offset-2 mx-2"
+          >
+            X
+          </a>
+          or let&apos;s connect on{" "}
+          <a
+            href="https://www.linkedin.com/in/sebastian-semeniuc-17136321a/"
+            className="font-bold text-lg text-purple-600 underline underline-offset-2 mx-2"
+          >
+            LinkedIn
+          </a>
+          . I&apos;m usually pretty quick to respond to any messages.
         </p>
-      </div>
+        <p>
+          Wanna build something together or just chat? I&apos;m always open to
+          new opportunities and getting to know new ambitious people.
+        </p>
+      </section>
     </div>
   );
 };

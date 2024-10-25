@@ -28,7 +28,7 @@ const links: SocialLink[] = [
   },
   {
     name: "Twitter",
-    url: "https://twitter.com/sebyss7",
+    url: "https://x.com/sebisemeniuc",
     Icon: Twitter,
   },
 ];

@@ -14,6 +14,7 @@ export const Avatar: FunctionComponent<Props> = ({ className }) => {
         className="rounded-full"
         alt="Sebastian Semeniuc"
         src={"/images/me.jpeg"}
+        unoptimized
       ></Image>
     </div>
   );
