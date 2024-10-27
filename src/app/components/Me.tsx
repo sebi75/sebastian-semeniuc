@@ -1,13 +1,30 @@
 import React, { FunctionComponent } from "react";
 
+const BIRTH_DATE = new Date("2003-08-19");
 export const Me: FunctionComponent = () => {
+  const getAge = () => {
+    const today = new Date();
+    const age = today.getFullYear() - BIRTH_DATE.getFullYear();
+    const monthDiff = today.getMonth() - BIRTH_DATE.getMonth();
+
+    if (
+      monthDiff < 0 ||
+      (monthDiff === 0 && today.getDate() < BIRTH_DATE.getDate())
+    ) {
+      return age - 1;
+    }
+
+    return age;
+  };
   return (
     <div className="flex flex-col p-3 space-y-16 max-w-2xl">
       <section className="text-xl my-3 text-zinc-400 flex flex-col gap-7">
         <h1 className="text-5xl font-bold text-zinc-800 mt-5">
           Sebastian Semeniuc
         </h1>
-        <p>I am a 21 years old builder and founder based in Cluj-Napoca.</p>
+        <p>
+          I am a {getAge()} years old builder and founder based in Cluj-Napoca.
+        </p>
         <p>I&apos;m working on various AI tools, some of which are:</p>
         <ul className="flex flex-col my-5 gap-7">
           <li className="list-disc gap-3">
