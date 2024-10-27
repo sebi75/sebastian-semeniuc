@@ -37,8 +37,8 @@ export const Me: FunctionComponent = () => {
               Kleerk
             </a>
             <span className="text-base">
-              - Build AI marketing copies & Generate thousands of AI product
-              photos in <b>seconds</b> instead of <b>tens of hours</b> and{" "}
+              - Generate beautiful product photoshoots with AI with your team in{" "}
+              <b>seconds</b> instead of <b>tens of hours</b> and{" "}
               <b>$K&apos;s</b> of dollars.
             </span>
           </li>
