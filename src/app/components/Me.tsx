@@ -25,7 +25,7 @@ export const Me: FunctionComponent = () => {
         <p>
           I am a {getAge()} years old builder and founder based in Cluj-Napoca.
         </p>
-        <p>I&apos;m working on various AI tools, some of which are:</p>
+        <p>I&apos;m working on AI products, some of which are:</p>
         <ul className="flex flex-col my-5 gap-7">
           <li className="list-disc gap-3">
             <a
