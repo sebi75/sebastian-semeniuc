@@ -18,15 +18,30 @@ export const Me: FunctionComponent = () => {
   };
   return (
     <div className="flex flex-col p-3 space-y-16 max-w-2xl">
-      <section className="text-xl my-3 text-zinc-400 flex flex-col gap-7">
-        <h1 className="text-5xl font-bold text-zinc-800 mt-5">
+      <section className="text-lg my-3 text-zinc-400 flex flex-col gap-7">
+        <h1 className="text-5xl font-bold text-zinc-800 mt-3">
           Sebastian Semeniuc
         </h1>
-        <p>
-          I am a {getAge()} years old builder and founder based in Cluj-Napoca.
-        </p>
-        <p>I&apos;m working on AI products, some of which are:</p>
+        <div className="flex flex-col gap-3">
+          <p>
+            I am a {getAge()} years old builder and founder based in Cluj-Napoca.
+          </p>
+          <p>I&apos;m working on AI products, some of which are:</p>
+        </div>
         <ul className="flex flex-col my-5 gap-7">
+          <li className="list-disc gap-3">
+            <a
+              className="font-bold text-lg text-purple-600 underline underline-offset-2 mx-2"
+              href="https://sync.so"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              sync.
+            </a>
+            <span className="text-base">
+              - Lipsync any video. Instantly. The world&apos;s most natural lipsync tool, no training required, available via API.
+            </span>
+          </li>
           <li className="list-disc gap-3">
             <a
               className="font-bold text-lg text-purple-600 underline underline-offset-2 mx-2"
@@ -75,29 +90,32 @@ export const Me: FunctionComponent = () => {
         </ul>
       </section>
 
-      <section className="text-xl my-3 text-zinc-400 flex flex-col gap-5">
+      <section className="text-lg my-3 text-zinc-400 flex flex-col gap-5">
         <h1 className="text-5xl font-bold text-zinc-800 mt-5">Contact me</h1>
 
         <p>
           Reach out to me at{" "}
           <a
-            href="mailto:
-        sebisemeniuc@gmail.com"
-            className="font-bold text-lg text-purple-600 underline underline-offset-2 mx-2"
+            href="mailto:sebisemeniuc@gmail.com"
+            className="font-bold text-lg text-purple-600 underline underline-offset-2"
           >
             sebisemeniuc@gmail.com
           </a>
-          , directly DM me on
+          , directly DM me on{" "}
           <a
             href="https://x.com/sebisemeniuc"
-            className="font-bold text-lg text-purple-600 underline underline-offset-2 mx-2"
+            className="font-bold text-lg text-purple-600 underline underline-offset-2"
+            target="_blank"
+            rel="noreferrer noopener"
           >
             X
           </a>
-          or let&apos;s connect on{" "}
+          {" "}or let&apos;s connect on{" "}
           <a
             href="https://www.linkedin.com/in/sebastian-semeniuc-17136321a/"
-            className="font-bold text-lg text-purple-600 underline underline-offset-2 mx-2"
+            className="font-bold text-lg text-purple-600 underline underline-offset-2"
+            target="_blank"
+            rel="noreferrer noopener"
           >
             LinkedIn
           </a>
@@ -105,7 +123,7 @@ export const Me: FunctionComponent = () => {
         </p>
         <p>
           Wanna build something together or just chat? I&apos;m always open to
-          new opportunities and getting to know new ambitious people.
+          new ideas and getting to know new cool people.
         </p>
       </section>
     </div>

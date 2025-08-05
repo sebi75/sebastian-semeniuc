@@ -1,4 +1,4 @@
-import { Me } from "@/app/components/Me";
+import { Me } from "@/app/components/me";
 import { constructMetadata } from "@/utils";
 
 export const metadata = constructMetadata();
